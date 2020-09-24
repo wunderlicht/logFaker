@@ -33,8 +33,8 @@ fluxcomp|FATAL|Just type 'mv * /dev/null'.
 [..]
 ```
 
-It shuffels by random on of the 'systems'  
-httpd, builder, fluxcomp, core, or coffeemaker
-with on of the levels  
+It shuffels by random one of the 'systems'  
+httpd, builder, fluxcomp, core, or coffeemaker  
+with one of the levels  
 DEBUG, INFO, WARN, ERROR, or FATAL  
-and one line from the BOFH excuses
+and one line from the [BOFH excuses](http://pages.cs.wisc.edu/~ballard/bofh/excuses)
