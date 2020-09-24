@@ -26,7 +26,6 @@ func main() {
 	flag.Int64Var(&freq, "freq", 2, "frequency of emitted fake lines (per second,  min. 1)")
 	flag.Int64Var(&count, "c", 0, "number of generated fake lines (0 infinite)")
 	flag.Parse()
-	fmt.Print(freq)
 
 	rand.Seed(time.Now().UnixNano())
 	if count > 0 {
