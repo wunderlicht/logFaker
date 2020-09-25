@@ -33,7 +33,7 @@ fluxcomp|FATAL|Just type 'mv * /dev/null'.
 [..]
 ```
 
-It shuffels by random one of the 'systems'  
+It shuffels one of the 'systems'  
 httpd, builder, fluxcomp, core, or coffeemaker  
 with one of the levels  
 DEBUG, INFO, WARN, ERROR, or FATAL  
