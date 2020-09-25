@@ -11,7 +11,7 @@
                 Ybmmmd'                                                   
 ```
 
-#A trivial tool to fake log output on STDOUT
+# A trivial tool to fake log output on STDOUT
 
 ```
 Usage of logFaker:
