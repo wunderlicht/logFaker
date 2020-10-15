@@ -13,6 +13,22 @@
 
 # A trivial tool to fake log output on STDOUT
 
+It shuffels one of the 'systems'  
+httpd, builder, fluxcomp, core, or coffeemaker  
+with one of the levels  
+DEBUG, INFO, WARN, ERROR, or FATAL  
+and one line from the [BOFH excuses](http://pages.cs.wisc.edu/~ballard/bofh/excuses)
+
+## Build
+```
+go generate
+go build
+```
+`generate` pulls the excuses from the web and builds `BOFHexcuses.go`.
+An internet connection is required for building
+logFaker. Using logFaker works offline, though.
+
+## Usage
 ```
 Usage of logFaker:
   -c int
@@ -21,7 +37,7 @@ Usage of logFaker:
         frequency of emitted fake lines (per second,  min. 1) (default 2)
 
 ```
-Examples of generated log lines.
+## Examples of generated log lines.
 ```
 fluxcomp|DEBUG|Chewing gum on /dev/sd3c
 coffeemaker|WARN|Fanout dropping voltage too much, try cutting some of those little traces
@@ -33,8 +49,3 @@ fluxcomp|FATAL|Just type 'mv * /dev/null'.
 [..]
 ```
 
-It shuffels one of the 'systems'  
-httpd, builder, fluxcomp, core, or coffeemaker  
-with one of the levels  
-DEBUG, INFO, WARN, ERROR, or FATAL  
-and one line from the [BOFH excuses](http://pages.cs.wisc.edu/~ballard/bofh/excuses)
