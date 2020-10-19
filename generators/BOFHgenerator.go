@@ -22,12 +22,14 @@ func main() {
 		escapedStr := strings.ReplaceAll(scanner.Text(), "\"", "\\\"")
 		data = append(data, escapedStr)
 	}
-
 	if err := scanner.Err(); err != nil {
 		panic(err)
 	}
 
 	f, err := os.Create(generateName)
+	if err != nil {
+		panic(err)
+	}
 	defer f.Close()
 
 	t := template.Must(template.ParseFiles(templName))

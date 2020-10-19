@@ -1,6 +1,7 @@
 package main
 
 //go:generate go run generators/BOFHgenerator.go
+//go:generate go fmt
 
 import (
 	"flag"
