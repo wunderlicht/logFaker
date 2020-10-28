@@ -39,13 +39,15 @@ Usage of logFaker:
 ```
 ## Examples of generated log lines.
 ```
-fluxcomp|DEBUG|Chewing gum on /dev/sd3c
-coffeemaker|WARN|Fanout dropping voltage too much, try cutting some of those little traces
-core|FATAL|Traceroute says that there is a routing problem in the backbone.  It's not our problem.
-core|ERROR|NOTICE: alloc: /dev/null: filesystem full
-coffeemaker|INFO|High line impedance.
-httpd|FATAL|(l)user error
-fluxcomp|FATAL|Just type 'mv * /dev/null'.
+2020/10/28 09:49:27 WARN|coffeemaker|halon system went off and killed the operators.
+2020/10/28 09:49:27 INFO|fluxcomp|fat electrons in the lines
+2020/10/28 09:49:28 INFO|coffeemaker|Chewing gum on /dev/sd3c
+2020/10/28 09:49:28 INFO|builder|Stale file handle (next time use Tupperware(tm)!)
+2020/10/28 09:49:29 FATAL|core|the daemons! the daemons! the terrible daemons!
+2020/10/28 09:49:29 FATAL|coffeemaker|It's not plugged in.
+2020/10/28 09:49:30 FATAL|builder|There isn't any problem
+2020/10/28 09:49:30 INFO|fluxcomp|Hot Java has gone cold
+2020/10/28 09:49:31 INFO|httpd|(l)user error
 [..]
 ```
 

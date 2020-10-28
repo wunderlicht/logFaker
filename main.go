@@ -5,7 +5,7 @@ package main
 
 import (
 	"flag"
-	"fmt"
+	"log"
 	"math/rand"
 	"time"
 )
@@ -31,9 +31,10 @@ func main() {
 	flag.Parse()
 
 	rand.Seed(time.Now().UnixNano())
+
 	if count > 0 {
 		for ; count > 0; count-- {
-			fmt.Printf("%s|%s|%s\n", app[rand.Intn(appLen)], logLevel[rand.Intn(logLevelLen)], BOFH[rand.Intn(bofhLen)])
+			log.Printf("%s|%s|%s\n", logLevel[rand.Intn(logLevelLen)], app[rand.Intn(appLen)], BOFH[rand.Intn(bofhLen)])
 			time.Sleep(time.Second / time.Duration(freq))
 		}
 		return //job done
@@ -41,7 +42,7 @@ func main() {
 
 	//we are here? loop forever!
 	for {
-		fmt.Printf("%s|%s|%s\n", app[rand.Intn(appLen)], logLevel[rand.Intn(logLevelLen)], BOFH[rand.Intn(bofhLen)])
+		log.Printf("%s|%s|%s\n", logLevel[rand.Intn(logLevelLen)], app[rand.Intn(appLen)], BOFH[rand.Intn(bofhLen)])
 		time.Sleep(time.Second / time.Duration(freq))
 	}
 }
