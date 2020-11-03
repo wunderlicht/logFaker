@@ -29,7 +29,9 @@ func main() {
 		stdout      bool
 	)
 	flag.Int64Var(&freq, "freq", 2, "frequency of emitted fake lines (per second,  min. 1)")
-	flag.Int64Var(&count, "c", 0, "number of generated fake lines (0 infinite)")
+	flag.Int64Var(&freq, "f", 2, "short for -freq")
+	flag.Int64Var(&count, "count", 0, "number of generated fake lines (0 infinite) (default 0)")
+	flag.Int64Var(&count, "c", 0, "short for -count (default 0)")
 	flag.BoolVar(&stdout, "stdout", false, "log to stdout instead of stderr")
 	flag.Parse()
 	if stdout {
