@@ -30,12 +30,22 @@ logFaker. Using logFaker works offline, though.
 
 ## Usage
 ```
-Usage of logFaker:
-  -c int
-        number of generated fake lines (0 infinite)
-  -freq int
-        frequency of emitted fake lines (per second,  min. 1) (default 2)
-
+logFaker [options]
+options:
+    -c int
+          short for -count (default 0)
+    -count int
+          number of generated fake lines (0 infinite) (default 0)
+    -e string
+          short for -emitter
+    -emitter string
+          use as emitter instead of changing it randomly
+    -f int
+          short for -freq (default 2)
+    -freq int
+          frequency of emitted fake lines (per second,  min. 1) (default 2)
+    -stdout
+          log to stdout instead of stderr
 ```
 ## Examples of generated log lines.
 ```
