@@ -13,7 +13,7 @@
 
 # A trivial tool to fake log output on STDOUT
 
-It shuffels one of the 'systems'  
+It shuffels one of the 'systems' (emitters)  
 httpd, builder, fluxcomp, core, or coffeemaker  
 with one of the levels  
 DEBUG, INFO, WARN, ERROR, or FATAL  
