@@ -18,6 +18,7 @@ func main() {
 		panic(err)
 	}
 	scanner := bufio.NewScanner(response.Body)
+	//escape backslashes
 	for scanner.Scan() {
 		escapedStr := strings.ReplaceAll(scanner.Text(), "\"", "\\\"")
 		data = append(data, escapedStr)
