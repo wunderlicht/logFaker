@@ -11,7 +11,7 @@
                 Ybmmmd'                                                   
 ```
 
-# A trivial tool to fake log output on STDOUT
+# A trivial tool to fake log output on STDERR or STDOUT
 
 It shuffels one of the 'systems' (emitters)  
 httpd, builder, fluxcomp, core, or coffeemaker  
