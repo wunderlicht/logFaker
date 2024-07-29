@@ -1,3 +1,4 @@
 module github.com/wunderlicht/logFaker
 
-go 1.17
+// originally build with go1.17. Fully backward compatible.
+go 1.22

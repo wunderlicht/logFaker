@@ -38,8 +38,6 @@ func main() {
 
 	emitterString := emitterName()
 
-	rand.Seed(time.Now().UnixNano())
-
 	if count > 0 {
 		for ; count > 0; count-- {
 			logAndWait(emitterString())
